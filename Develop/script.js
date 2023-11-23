@@ -72,7 +72,6 @@ var symbols = [
   "{",
   "}",
   ".",
-  ",",
   "?",
   ">",
   "<",
@@ -121,14 +120,18 @@ function generatePassword() {
     } else {
       var option4 = option3;
     }
-    console.log(option4);
     //CHOOSING RANDOM VALUES FROM COMBINED LIST//
     let n = 0;
     while (n < acceptableLength) {
       n++;
+      //ADDING RANDOMLY CHOSEN VALUES TO A SINGLE ARRAY//
       optionCombo.unshift(option4[Math.floor(option4.length * Math.random())]);
     }
-    console.log(optionCombo);
+    //CONVERTING ARRAY OF RANDOM VALUES TO STRING//
+    squeezePassword = optionCombo.toString();
+    //REMOVING "," FROM STRING//
+    yourPassword = squeezePassword.replaceAll(",", "");
+    return yourPassword;
   }
   //ALERT IF PASSWORD IS TOO LARGE OR SMALL//
   else {
