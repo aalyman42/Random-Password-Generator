@@ -84,7 +84,7 @@ var symbols = [
 ];
 var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var option0 = [];
-
+var optionCombo = [];
 //Function Declaration for variable generatePassword//
 function generatePassword() {
   //CHECKING IF PASSWORD FITS REQUIRED SIZE//
@@ -126,10 +126,12 @@ function generatePassword() {
     let n = 0;
     while (n < acceptableLength) {
       n++;
-      var yourPassword = option4[Math.floor(option4.length * Math.random())];
-      console.log(yourPassword);
+      optionCombo.unshift(option4[Math.floor(option4.length * Math.random())]);
     }
-  } else {
+    console.log(optionCombo);
+  }
+  //ALERT IF PASSWORD IS TOO LARGE OR SMALL//
+  else {
     alert("Please create a password between 8 and 128 characters.");
   }
 }
