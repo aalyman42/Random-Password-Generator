@@ -1,0 +1,22 @@
+needed variables (value)
+    lowercaseText (string array)
+    uppercaseText (string array)
+    symbols (string array)
+    numbers (number array)
+    acceptableLength (Boolean)
+
+I need to allow users to choose a password length between 8 and 128 with a prompt
+
+I need to use confirms to allow users to select which arrays to use in password.
+
+I need to combine arrays into one common array
+
+from the common array, i need to select random values for a new array that is the length of the user's chosen length.
+
+I need to change the array from line 14 into a string value
+
+i need to display the string value into the "your secure password" box
+
+var optionPossibilities [array]
+var optionCombo [array length = password length]
+var yourPassword "String of optionCombo[array]"
