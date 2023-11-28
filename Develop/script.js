@@ -1,61 +1,9 @@
-// Assignment code here
+// Assignment code //
 //DECLARING GLOBAL VARIABLE ARRAYS//
-var lowercaseText = [
-  "a",
-  "b",
-  "c",
-  "d",
-  "e",
-  "f",
-  "g",
-  "h",
-  "i",
-  "j",
-  "k",
-  "l",
-  "m",
-  "n",
-  "o",
-  "p",
-  "q",
-  "r",
-  "s",
-  "t",
-  "u",
-  "v",
-  "w",
-  "x",
-  "y",
-  "z",
-];
-var uppercaseText = [
-  "A",
-  "B",
-  "C",
-  "D",
-  "E",
-  "F",
-  "G",
-  "H",
-  "I",
-  "J",
-  "K",
-  "L",
-  "M",
-  "N",
-  "O",
-  "P",
-  "Q",
-  "R",
-  "S",
-  "T",
-  "U",
-  "V",
-  "W",
-  "X",
-  "Y",
-  "Z",
-];
+var letters = "a b c d e f g h i j k l m n o p q r s t u v w x y z";
+var lowercaseText = letters.split(" ");
+var upper = letters.toUpperCase();
+var uppercaseText = upper.split(" ");
 var symbols = [
   "[",
   "]",
@@ -140,6 +88,8 @@ function generatePassword() {
     alert("Please create a password between 8 and 128 characters.");
   }
 }
+
+//Source Code courtesy of https://github.com/coding-boot-camp/friendly-parakeet//
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
