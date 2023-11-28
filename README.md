@@ -9,7 +9,7 @@ https://github.com/coding-boot-camp/friendly-parakeet
 
 ## Screenshot
 
-![Random Password Generator](./Capture.jpg)
+![Random Password Generator](Capture.jpg)
 
 ## Link
 
